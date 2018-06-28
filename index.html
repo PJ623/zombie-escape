@@ -15,13 +15,12 @@
             font-size: 2em;
         }
 
-        #message {
+        .bold {
             font-weight: bold;
         }
 
         h1,
-        h2,
-        h3 {
+        h2 {
             font-size: 1.1em;
         }
     </style>
@@ -29,29 +28,30 @@
 
 <body>
     <h1>Zombie Escape</h1>
-    <h2>written by
+    <p class="bold">written by
         <a href="#">PJ623</a>
-    </h2>
+    </p>
 
     <div id="wrapper">
         <div id="canvas">
 
         </div>
     </div>
-    <p id="message-box">
+    <p id="message-box" class="bold">
 
     </p>
     <p>Levels Completed:
         <span id="scoreboard">0</span>
     </p>
     <div>
-        <h3>Instructions:</h3>
+        <h2>Instructions:</h2>
         <ul>
             <li>Use WASD to move.</li>
+            <li>The enemies move after you move.</li>
             <li>You can kill enemies by moving into them, and enemies can kill you by moving into you.</li>
             <li>Win the game by reaching each level's exit point.</li>
         </ul>
-        <h3>Legend:</h3>
+        <h2>Legend:</h2>
         <ul>
             <li>O = You</li>
             <li>0 = Enemy</li>
