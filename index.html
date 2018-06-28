@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Zombie Escape</title>
+    <style>
+        #canvas {
+            /*border-style: solid;
+            border-width: 2px;*/
+            display: inline-block;
+        }
+
+        body {
+            font-family: monospace;
+            font-size: 2em;
+        }
+
+        #message {
+            font-weight: bold;
+        }
+
+        h1,
+        h2,
+        h3 {
+            font-size: 1.1em;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Zombie Escape</h1>
+    <h2>written by
+        <a href="#">PJ623</a>
+    </h2>
+
+    <div id="wrapper">
+        <div id="canvas">
+
+        </div>
+    </div>
+    <p id="message-box">
+
+    </p>
+    <p>Levels Completed:
+        <span id="scoreboard">0</span>
+    </p>
+    <div>
+        <h3>Instructions:</h3>
+        <ul>
+            <li>Use WASD to move.</li>
+            <li>You can kill enemies by moving into them, and enemies can kill you by moving into you.</li>
+            <li>Win the game by reaching each level's exit point.</li>
+        </ul>
+        <h3>Legend:</h3>
+        <ul>
+            <li>O = You</li>
+            <li>0 = Enemy</li>
+            <li># = Wall</li>
+        </ul>
+    </div>
+    <script src="entities.js"></script>
+    <script src="space.js"></script>
+    <script src="game.js"></script>
+    <script src="main.js"></script>
+</body>
+
+</html>
